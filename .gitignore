@@ -1,15 +1,12 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+.DS_Store
 
-pids
-logs
-results
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
 
-npm-debug.log
-node_modules
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+*~
+\#*
