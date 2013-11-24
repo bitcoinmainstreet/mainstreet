@@ -13,7 +13,8 @@ class Stocks extends Controller {
   
   public function stock(){
     echo 'stock';
-    $this->render();
+    //the template path thing should be done in parent class. how to get calling function?
+    $this->render(strtolower($this->out['app_name']).'/'.__function__);
   }
   public function buy(){
     echo 'buy';

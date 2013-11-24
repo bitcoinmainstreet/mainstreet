@@ -1,21 +1,28 @@
 <?php
 require_once('controller.php');
 class Auth extends Controller {
-  public function __construct(){
+
+  public function __construct()
+  {
     parent::__construct();
     $this->out['app_name']='Auth';
   }
 
+  public function __validate_login()
+  {
+    $this->form_validation->set_rules('username', 'Username', 'required');
+    $this->form_validation->set_rules('password', 'Password', 'required');
+  }
+
   public function login()
   {
-    $this->load->view('auth/login');
+    $this->render('auth/login');
   }
 
   public function register()
   {
-    $this->load->view('auth/register');
+    $this->render('auth/register');
   }
-
   
 }  
 
