@@ -10,9 +10,9 @@ Bitcoin Mainstreet is a site that will contain multiple microsites:
 
 What is unique about Bitcoin Mainstreet:
 
-The developers all own shares of the site. Every day 100 shares are created for the project and 50% of them are issued to developers up to 
-four times a month depending on their contributions to the site. Profits to the site are distributed to shareholders, so contributing to the
-development of the site is not just enjoyable, but potentially profitable. 
+The developers all own shares of the site, and shares are distributed depending on the developer's contributions to the site. Profits to the site are distributed to shareholders, so contributing to the development of the site is not just enjoyable, but potentially profitable. 
 
 Shares are currently recorded in a spreadsheet in the github repositiory, but will eventually be transitioned to the first microsite,
 which will be a stock trading marketplace. From there you can sell your shares to non-developers if you would like to cash out early.
+
+For more about how project shares work, read the readme.txt file in the project_shares directory.
