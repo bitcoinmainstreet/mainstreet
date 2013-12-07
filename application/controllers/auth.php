@@ -22,11 +22,14 @@ class Auth extends Controller {
   public function login()
   {
     if($this->validated){
-      list($success, $message) = $this->User_model->login_test();
+      list($success, $message, $user) = $this->User_model->login_test();
       if(!$success){
 	$this->out['errors'][] = $message;
       }else{
 	$this->out['successes'][] = $message;
+	$_SESSION['logged_in_user'] = $user;
+	$_SESSION['last_activity'] = time();
+	redirect('/?success='.urlencode($message), 'refresh');
       }
     }
     $this->render('auth/login');
@@ -36,7 +39,6 @@ class Auth extends Controller {
   public function __validate_register(){
     $this->form_validation->set_rules('username', 'Username', 'required');
     $this->form_validation->set_rules('password', 'Password', 'required');
-    
   }
 
   public function register()

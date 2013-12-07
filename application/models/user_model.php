@@ -12,12 +12,12 @@ class User_model extends Model {
   public function login_test(){
     $user = $this->get_user($this->input->post('username'));
     if(!$user){
-      return array(false, 'User not found');
+      return array(false, 'User not found', null);
     }
     if(!password_verify($this->input->post('password'), $user->password_hash)){
-      return array(false, 'Invalid password');
+      return array(false, 'Invalid password', null);
     }
-    return array(true, 'User logged in');
+    return array(true, 'User logged in', $user);
   }
 
   public function get_user($username){

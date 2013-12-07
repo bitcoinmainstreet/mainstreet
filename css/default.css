@@ -70,3 +70,13 @@ p.footer{
     background:#ddddff;
     border:1px solid #0000ff;
 }
+
+#authenticated{
+    float:right;
+    padding:0.5em;
+}
+#authenticated li{
+    display: inline;
+    list-style-type: none;
+    padding-left: 20px;
+}

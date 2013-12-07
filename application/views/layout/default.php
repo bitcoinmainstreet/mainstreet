@@ -1,3 +1,4 @@
+<?php echo bcmul('3344444411122', '141341413141');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,9 +9,16 @@
   </head>
   <body>
     <div id="container">
-      <h1>Main Street</h1> 
+      <?php if($user):?>
+       <ul id="authenticated">
+	 <li><a href="/account/"><?=$user->username?></a> </li>
+	 <li><a href="/auth/logout">Logout</a></li>
+       </ul>
+      <?php endif; ?>
+
+      <h1><a href="/">Main Street</a></h1> 
       <div id="body">
-	<h2><a href="/<?=strtolower($app_name)?>"><?php echo $app_name?></a> - <?php echo $page_name?></h2>
+	<h2><a href="/<?=strtolower($app_name)?>"><?php echo $app_name?></a> - <?php echo $page_name ? $page_name : 'Home' ?></h2>
 	<?php foreach($errors as $error): ?>
 	  <div class="error"><?=$error?></div>
 	<?php endforeach;?>
