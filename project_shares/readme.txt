@@ -1,6 +1,6 @@
 This project is a bit of an experiment in bitcoin, open source, and reward systems. 
 
-Every day 100 shares will be created for this project. They will then be issued anwhere between once a month to four times a month depending on how much activity is happening on the project.
+Every day 100 shares will be created for this project. They will then be issued anywhere between once a month to four times a month depending on how much activity is happening on the project.
 
 50% of the shares will be issued to the project owner (sonofman), and the remainder will be divided up based on contributions to the project. Anyone submitting code, assets, QA help, etc will be given points based upon the value of their contributions. Points earned from the time of the last issuing of the stock by the person will be used to determine
 the percentage of the total issued stocks that person earned (rounded to the nearest integer). So if you earned 25 points since the last shares were issued, and the total that all people earned was 100 points, you would be granted 75% of the 
@@ -10,4 +10,4 @@ All profits from the running of the site based on this project will be divided u
 
 This whole concept is experimental right now, and is totally subject to change and improved as long as those changes are for the betterment of the project and the shareholders. 
 
-
+If you are going to contribute to the project, be sure to add your github username and bitcoin address to contributor_bitcoin_addresses.csv (open in a text editor).
