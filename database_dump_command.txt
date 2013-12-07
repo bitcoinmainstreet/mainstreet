@@ -1,0 +1,1 @@
+mysqldump --no-data --compact -u root mainstreet > database.sql
