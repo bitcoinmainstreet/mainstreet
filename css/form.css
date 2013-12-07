@@ -1,0 +1,22 @@
+fieldset{
+    border:1px solid rgb(208, 208, 208);
+    margin:8px;
+    position:relative;
+    padding-top:10px;
+}
+
+fieldset > label{
+    position:absolute;
+    border:1px solid rgb(208, 208, 208);
+    top:-10px;
+    background: rgb(230, 230, 230);
+    padding:3px;
+}
+
+.input-p{
+    position:relative;
+}
+.input-p > label{
+    width:120px;
+    float:left;
+}

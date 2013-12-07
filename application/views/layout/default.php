@@ -10,7 +10,13 @@
     <div id="container">
       <h1>Main Street</h1> 
       <div id="body">
-	<h2><?php echo $app_name?></h2>
+	<h2><a href="/<?=strtolower($app_name)?>"><?php echo $app_name?></a> - <?php echo $page_name?></h2>
+	<?php foreach($errors as $error): ?>
+	  <div class="error"><?=$error?></div>
+	<?php endforeach;?>
+	<?php foreach($successes as $success): ?>
+	  <div class="success"><?=$success?></div>
+	<?php endforeach;?>
 	<?php $this->load->view('layout/body');?>
       </div>
 	</div>
