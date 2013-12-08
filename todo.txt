@@ -1,13 +1,13 @@
-Logout
-bitcoin - add coins to account (stored as satoshis)
+bitcoin - add bitcoin to server
+bitcoin - add php library for interacting with bitcoin api
+bitcoin - add coins to account mysql db (stored as satoshis)
  -- account record should handle bitcoins as well as various other acct records (stocks, LTC, etc) as ints
  -- for php, use http://www.php.net/manual/en/ref.bc.php for large ints, for mysql use BIGINT
 bitcoin - send coins out of account
 bitcoin - show coins in header 
 bitcoin - allow user to see BTC, mBTC, uBTC, sBTC(satashis)
 
-
-
+Logout
 
 ==Done==
 Login 
